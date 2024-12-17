@@ -1,10 +1,13 @@
 import React from 'react'
+import Nav from './componets/Nav/Nav'
+import Home from './componets/Home/Home'
 
 const App = () => {
   return (
-    <div>
-      house
-    </div>
+    <>
+      <Nav/>
+      <Home/>
+    </>
   )
 }
 
