@@ -17,11 +17,7 @@
   padding: 20px;
   box-sizing: border-box;
 }
-.nav2 {
-  width: 100%;
-  height: 50%;
-  background-color: white;
-}
+
 .logo{
   display: flex;
   align-items: center;
@@ -50,8 +46,8 @@
   outline: none;
 }
 .search button{
-  padding: 10px;
-  background-color: rgba(157, 11, 11, 0.943);
+  padding: 8px;
+  background-color: rgba(151, 76, 19, 0.943);
   color: white;
   font-size: 16px;
   border-radius: 30px;
@@ -153,6 +149,106 @@
 }
 .ham1:hover{
   background-color: rgba(232,230,230,0.844);
+}
+.nav2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+.svg11{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.svg11 svg{
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+.svg11 h3{
+  font-size: 12px;
+  color: rgba(56,56,56);
+  font-weight: 300;
+}
+/* responsive */
+/* Screen width up to 900px */
+@media (max-width: 900px) {
+  .search input {
+    width: 200px;
+  }
+  .search button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #btn1 {
+    display: none;
+  }
+}
+
+/* Screen width up to 800px */
+@media (max-width: 800px) {
+  .logo h1 {
+    display: none;
+  }
+  #nav1 {
+    overflow: hidden;
+    padding: 10px;
+  }
+  .nav2 {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: start;
+    padding: 10px;
+  }
+  .svg11 {
+    flex-shrink: 0;
+    scrollbar-width: none;
+  }
+  .search input{
+    width: 180px;
+    font-size:15px ;
+  }
+  .search span{
+    display: none;
+  }
+  .search{
+    gap: 20px;
+  }
+}
+
+/* Screen width up to 600px */
+@media (max-width: 600px) {
+  #btnHome1{
+    border: none;
+    padding: 0;
+  }
+  #svg2{
+    display: none;
+  }
+  #svg1{
+    width: 25px;
+    height: 25px;
+    fill: black;
+  }
+  .search button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .ham {
+    display: none;
+  }
+  .hamburger {
+    width: 100%;
+    height: auto;
+    position: static;
+    box-shadow: none;
+  }
 }
 
 

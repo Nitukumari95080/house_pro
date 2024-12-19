@@ -4,6 +4,13 @@ import logo  from '../../assets/p.jpg'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
+import { MdBedroomParent, MdOutlinePool, MdOutlineWhatshot } from "react-icons/md";
+import { PiFarm } from 'react-icons/pi';
+import { LuTentTree } from 'react-icons/lu';
+import { GiWoodCabin } from 'react-icons/gi';
+import { SiHomeassistantcommunitystore } from 'react-icons/si';
+import { FaTreeCity } from 'react-icons/fa6';
+import { IoSearch } from 'react-icons/io5';
 
 const Nav = () => {
   let [visible,setvisible]=useState(false)
@@ -22,7 +29,7 @@ const Nav = () => {
         </div>
         <div className="search">
           <input type="text" placeholder='Search Destination'/>
-          <button>Search <CiSearch/></button>
+          <button> <span>Search</span><IoSearch/></button>
         </div>
         <div className="ham">
           <button id='btnHome'>List Your Home</button>
@@ -34,7 +41,16 @@ const Nav = () => {
           </button>
         </div>
       </div>
-      <div className="nav2"></div>
+      <div className="nav2">
+        <div className="svg11"><MdOutlineWhatshot /><h3>Treding</h3></div>
+        <div className="svg11"><MdBedroomParent/><h3>Rooms</h3></div>
+        <div className="svg11"><PiFarm/><h3>Farm Houses</h3></div>
+        <div className="svg11"><MdOutlinePool/><h3>Pool Houses</h3></div>
+        <div className="svg11"><LuTentTree/><h3>Tent House</h3></div>
+        <div className="svg11"><GiWoodCabin/><h3>Cabins</h3></div>
+        <div className="svg11"><SiHomeassistantcommunitystore/><h3>Shops</h3></div>
+        <div className="svg11"><FaTreeCity/><h3>Forest Houses</h3></div>
+      </div>
     </div>
   )
 }
