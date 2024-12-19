@@ -14,9 +14,9 @@ const Login = () => {
         </div>
         <div className="list">
           <label htmlFor="password">Password</label>
-          <input type="password"  id="password" placeholder="Enter your email" required/>
+          <input type="password"  id="password" placeholder="Enter your password" required/>
         </div>
-        <button id="loginbtn">Submit</button>
+        <button id="loginbtn">Login</button>
       </form>
     </div>
   );
