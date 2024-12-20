@@ -1,3 +1,4 @@
+import { MdLogin } from "react-icons/md";
 import "./Login.css";
 
 const Login = () => {
@@ -31,7 +32,7 @@ const Login = () => {
           />
         </div>
         <button id="loginbtn" type="submit">
-          Login
+          Login<MdLogin/>
         </button>
       </form>
     </div>

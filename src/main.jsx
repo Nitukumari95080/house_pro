@@ -18,6 +18,7 @@ import PoolHouses from "./componets/FarmHouse/PoolHouses";
 import TentHouses from "./componets/FarmHouse/TentHouses";
 import Cabins from "./componets/FarmHouse/Cabins";
 import Shops from "./componets/FarmHouse/Shops";
+import Listinging from "./componets/Listinging/Listinging";
 
 SignUp;
 const router = createBrowserRouter(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="/tenthouses" element={<TentHouses />} />
       <Route path="/cabins" element={<Cabins />} />
       <Route path="/shops" element={<Shops />} />
+      <Route path="/Listing" element={<Listinging/>} />
     </Route>
   )
 );

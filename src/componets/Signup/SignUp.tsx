@@ -1,5 +1,6 @@
 import React from 'react'
 import  './SignUp.css'
+import { MdOutlinePersonAddAlt1 } from 'react-icons/md'
 
 const SignUp = () => {
   return (
@@ -18,7 +19,7 @@ const SignUp = () => {
           <label htmlFor="canpassword">Confirm Password</label>
           <input type="password"  id="canpassword" placeholder="Coform password" required/>
         </div>
-        <button id="loginbtn">Sign Up</button>
+        <button id="loginbtn">Sign Up<MdOutlinePersonAddAlt1/></button>
       </form>
     </div>
   )

@@ -19,13 +19,15 @@ const Nav = () => {
       {/* Hamburger Menu */}
       {isVisible && (
         <div className="hamburger">
-          <Link to="/Login">
+          <Link to={"/Login"}>
             <div className="ham1">Login</div>
           </Link>
-          <Link to="/Signup">
+          <Link to={"/Signup"}>
             <div className="ham1">Sign Up</div>
           </Link>
+          <Link to={"/Listing"}>
           <div className="ham1">List Your Home</div>
+          </Link>
           <div className="ham1">Help Center</div>
         </div>
       )}
@@ -50,7 +52,7 @@ const Nav = () => {
         </div>
 
         <div className="ham">
-          <button id="btnHome">List Your Home</button>
+        <Link to={"/Listing"}> <button id="btnHome">List Your Home</button></Link>
           <button
             id="btnHome1"
             onClick={() => setIsVisible((prev) => !prev)} // Toggle menu visibility
