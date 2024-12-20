@@ -9,26 +9,38 @@ import { GiWoodCabin } from 'react-icons/gi';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { FaTreeCity } from 'react-icons/fa6';
 import { IoSearch } from 'react-icons/io5';
+import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
-  const [visible, setVisible] = useState(false);  // Corrected state name for clarity
+  const [isVisible, setIsVisible] = useState(false); // State for hamburger menu visibility
 
   return (
     <div id="nav">
-      {visible && (
+      {/* Hamburger Menu */}
+      {isVisible && (
         <div className="hamburger">
-          <div className="ham1">Login</div>
-          <div className="ham1">Sign Up</div>
+          <Link to="/Login">
+            <div className="ham1">Login</div>
+          </Link>
+          <Link to="/Signup">
+            <div className="ham1">Sign Up</div>
+          </Link>
           <div className="ham1">List Your Home</div>
           <div className="ham1">Help Center</div>
         </div>
       )}
 
+      {/* Main Navigation */}
       <div className="nav1">
-        <div className="logo">
-          <img src="/assets/p.jpg" alt="Logo" width="50px" />  {/* Fixed the image path */}
-          <h1>Rental <span>House</span></h1>
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <img src="/assets/p.jpg" alt="Rental House Logo" width="50px" />
+            <h1>
+              Rental <span>House</span>
+            </h1>
+          </div>
+        </Link>
+
         <div className="search">
           <input type="text" placeholder="Search Destination" />
           <button>
@@ -36,11 +48,12 @@ const Nav = () => {
             <IoSearch />
           </button>
         </div>
+
         <div className="ham">
           <button id="btnHome">List Your Home</button>
           <button
             id="btnHome1"
-            onClick={() => setVisible((prev) => !prev)}  // Toggles visibility on button click
+            onClick={() => setIsVisible((prev) => !prev)} // Toggle menu visibility
           >
             <RxHamburgerMenu id="svg1" />
             <CgProfile id="svg2" />
@@ -48,40 +61,17 @@ const Nav = () => {
         </div>
       </div>
 
+      {/* Secondary Navigation */}
       <div className="nav2">
-        <div className="svg11">
-          <MdOutlineWhatshot />
-          <h3>Trending</h3>
-        </div>
-        <div className="svg11">
-          <MdBedroomParent />
-          <h3>Rooms</h3>
-        </div>
-        <div className="svg11">
-          <PiFarm />
-          <h3>Farm Houses</h3>
-        </div>
-        <div className="svg11">
-          <MdOutlinePool />
-          <h3>Pool Houses</h3>
-        </div>
-        <div className="svg11">
-          <LuTentTree />
-          <h3>Tent House</h3>
-        </div>
-        <div className="svg11">
-          <GiWoodCabin />
-          <h3>Cabins</h3>
-        </div>
-        <div className="svg11">
-          <SiHomeassistantcommunitystore />
-          <h3>Shops</h3>
-        </div>
-        <div className="svg11">
-          <FaTreeCity />
-          <h3>Forest Houses</h3>
-        </div>
-      </div>
+      <NavLink to=""><div className="svg11"><MdOutlineWhatshot /><h3>Trending</h3></div></NavLink>
+      <NavLink to="/rooms"><div className="svg11"><MdBedroomParent /><h3>Rooms</h3></div></NavLink>
+      <NavLink to="/farmhouses"><div className="svg11"><PiFarm /><h3>Farm Houses</h3></div></NavLink>
+      <NavLink to="/poolhouses"><div className="svg11"><MdOutlinePool /><h3>Pool Houses</h3></div></NavLink>
+      <NavLink to="/tenthouses"><div className="svg11"><LuTentTree /><h3>Tent Houses</h3></div></NavLink>
+      <NavLink to="/cabins"><div className="svg11"><GiWoodCabin /><h3>Cabins</h3></div></NavLink>
+      <NavLink to="/shops"><div className="svg11"><SiHomeassistantcommunitystore /><h3>Shops</h3></div></NavLink>
+      <NavLink to="/foresthouses"><div className="svg11"><FaTreeCity /><h3>Forest Houses</h3></div></NavLink>
+    </div>
     </div>
   );
 };

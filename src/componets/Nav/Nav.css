@@ -150,6 +150,10 @@
 .ham1:hover{
   background-color: rgba(232,230,230,0.844);
 }
+a.active{
+  border-bottom: 2px solid rgb(81, 79, 79);
+  margin-bottom: 5px;
+}
 .nav2{
   display: flex;
   align-items: center;

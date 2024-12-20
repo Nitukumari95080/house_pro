@@ -1,86 +1,94 @@
 {
-    "houses": [
-      {
-        "title": "3BHK in Jhansi",
-        "images": [
-          "/assets/farmhouse.jpg",
-          "/assets/farmhouse1.jpg",
-          "/assets/farmhouse2.jpg"
-        ],
-        "price": "₹500,000/month"
-      },
-      {
-        "title": "2BHK Villa in Jhansi",
-        "images": [
-          "/assets/house.jpg",
-          "/assets/housekichen.jpg",
-          "/assets/houseroom.jpg"
-        ],
-        "price": "₹450,000/month"
-      },
-      {
-        "title": "Luxury Apartment in Kanpur",
-        "images": [
-          "/assets/hut1.avif",
-          "/assets/hut2.avif",
-          "/assets/hut3.avif"
-        ],
-        "price": "₹800,000/month"
-      },
-      {
-        "title": "1BHK Studio in Lucknow",
-        "images": [
-          "/assets/huthouse.jpg",
-          "/assets/huthouse1.jpg",
-          "/assets/huthouse2.jpg"
-        ],
-        "price": "₹200,000/month"
-      },
-      {
-        "title": "4BHK Duplex in Agra",
-        "images": [
-          "/assets/roomhouse1.avif",
-          "/assets/roomhouse2.avif",
-          "/assets/roomhouse3.avif"
-        ],
-        "price": "₹900,000/month"
-      },
-      {
-        "title": "Penthouse in Delhi",
-        "images": [
-          "/assets/roomnew1.avif",
-          "/assets/roomnew2.avif",
-          "/assets/roomnew3.avif"
-        ],
-        "price": "₹1,200,000/month"
-      },
-      {
-        "title": "3BHK Flat in Noida",
-        "images": [
-          "/assets/ski.avif",
-          "/assets/ski1.avif",
-          "/assets/ski2.avif"
-        ],
-        "price": "₹700,000/month"
-      },
-      {
-        "title": "2BHK House in Varanasi",
-        "images": [
-          "/assets/villa.jpg",
-          "/assets/villa1.jpg",
-          "/assets/villa3.jpg"
-        ],
-        "price": "₹300,000/month"
-      },
-      {
-        "title": "Villa in Chandigarh",
-        "images": [
-          "/assets/village.avif",
-          "/assets/village1.avif",
-          "/assets/village2.avif"
-        ],
-        "price": "₹1,500,000/month"
-      }
-    ]
-  }
-  
+  "houses": [
+    {
+      "title": "3BHK in Jhansi",
+      "type": "Farm House",
+      "images": [
+        "/assets/farmhouse.jpg",
+        "/assets/farmhouse1.jpg",
+        "/assets/farmhouse2.jpg"
+      ],
+      "price": "₹500,000/month"
+    },
+    {
+      "title": "2BHK Villa in Jhansi",
+      "type": "Room",
+      "images": [
+        "/assets/house.jpg",
+        "/assets/housekichen.jpg",
+        "/assets/houseroom.jpg"
+      ],
+      "price": "₹450,000/month"
+    },
+    {
+      "title": "Luxury Apartment in Kanpur",
+      "type": "Room",
+      "images": [
+        "/assets/hut1.avif",
+        "/assets/hut2.avif",
+        "/assets/hut3.avif"
+      ],
+      "price": "₹800,000/month"
+    },
+    {
+      "title": "1BHK Studio in Lucknow",
+      "type": "Pool House",
+      "images": [
+        "/assets/huthouse.jpg",
+        "/assets/huthouse1.jpg",
+        "/assets/huthouse2.jpg"
+      ],
+      "price": "₹200,000/month"
+    },
+    {
+      "title": "4BHK Duplex in Agra",
+      "type": "Room",
+      "images": [
+        "/assets/roomhouse1.avif",
+        "/assets/roomhouse2.avif",
+        "/assets/roomhouse3.avif"
+      ],
+      "price": "₹900,000/month"
+    },
+    {
+      "title": "Penthouse in Delhi",
+      "type": "Cabin",
+      "images": [
+        "/assets/roomnew1.avif",
+        "/assets/roomnew2.avif",
+        "/assets/roomnew3.avif"
+      ],
+      "price": "₹1,200,000/month"
+    },
+    {
+      "title": "3BHK Flat in Noida",
+      "type": "Tent House",
+      "images": [
+        "/assets/ski.avif",
+        "/assets/ski1.avif",
+        "/assets/ski2.avif"
+      ],
+      "price": "₹700,000/month"
+    },
+    {
+      "title": "2BHK House in Varanasi",
+      "type": "Shop",
+      "images": [
+        "/assets/villa.jpg",
+        "/assets/villa1.jpg",
+        "/assets/villa3.jpg"
+      ],
+      "price": "₹300,000/month"
+    },
+    {
+      "title": "Villa in Chandigarh",
+      "type": "Forest House",
+      "images": [
+        "/assets/village.avif",
+        "/assets/village1.avif",
+        "/assets/village2.avif"
+      ],
+      "price": "₹1,500,000/month"
+    }
+  ]
+}
