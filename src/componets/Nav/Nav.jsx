@@ -28,7 +28,9 @@ const Nav = () => {
           <Link to={"/Listing"}>
           <div className="ham1">List Your Home</div>
           </Link>
+          <Link to={"/Contact"}>
           <div className="ham1">Help Center</div>
+          </Link>
         </div>
       )}
 

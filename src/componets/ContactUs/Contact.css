@@ -1,0 +1,78 @@
+#contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-bottom: 30px;
+  }
+  
+  #contact form {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #contacttitle {
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .list label {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .list input,
+  .list textarea {
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    border: 1px solid rgba(212, 190, 190, 0.825);
+    box-sizing: border-box;
+  }
+  
+  #loginbtn {
+    padding: 8px 15px;
+    background-color: rgba(214, 7, 7, 0.943);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #loginbtn:hover {
+    background-color: rgba(180, 0, 0, 0.943);
+  }
+  
+  #loginbtn svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
+  

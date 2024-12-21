@@ -19,6 +19,8 @@ import TentHouses from "./componets/FarmHouse/TentHouses";
 import Cabins from "./componets/FarmHouse/Cabins";
 import Shops from "./componets/FarmHouse/Shops";
 import Listinging from "./componets/Listinging/Listinging";
+import UserContext from "./Context/UserContext";
+import Contact from "./componets/ContactUs/Contact";
 
 SignUp;
 const router = createBrowserRouter(
@@ -35,12 +37,15 @@ const router = createBrowserRouter(
       <Route path="/cabins" element={<Cabins />} />
       <Route path="/shops" element={<Shops />} />
       <Route path="/Listing" element={<Listinging/>} />
+      <Route path="/Contact" element={<Contact/>} />
     </Route>
   )
 );
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <UserContext>
     <RouterProvider router={router} />
+    </UserContext>
   </StrictMode>
 );
