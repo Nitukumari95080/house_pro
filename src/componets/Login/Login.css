@@ -1,56 +1,62 @@
-#login{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    flex-direction: column;
-    margin-top: 100px;
-    
-}
-#login form{
-  width: 70%;
+#login {
+  width: 100%;
   height: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 120px; 
+  box-sizing: border-box; 
+}
+
+#login form {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  box-sizing: border-box;
 }
-#logintitle{
-    font-size: 40px;
-    font-weight: 500;
-    color: black;
-    margin-bottom: 20px;
+
+#logintitle {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center; /* Center align title for smaller screens */
 }
-.list{
-    width: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
+
+.list {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
-.list label{
-    font-size: 20px;
-    font-weight: 600;
-    color: black;
+
+.list label {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
 }
+
 .list input {
-    width: 90%;
-    padding: 3px;
-    border-radius: 4px;
-    outline: none;
-    box-sizing: border-box;
-    font-size: 15px;
-    padding: 5px;
-    color: black;
-    font-weight: 300;
-    border: 1px solid rgba(212, 190, 190, 0.825); /* Fixed syntax */
-  }
-  
-#loginbtn{
-    padding: 8px 15px;
+  width: 90%;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: black;
+  font-weight: 300;
+  border: 1px solid rgba(212, 190, 190, 0.825);
+}
+
+#loginbtn {
+  padding: 10px 20px; /* Adjust padding for a better look */
   background-color: rgba(214, 7, 7, 0.943);
   color: white;
   font-size: 18px;
@@ -61,9 +67,52 @@
   gap: 5px;
   cursor: pointer;
   margin-top: 20px;
+  transition: background-color 0.3s ease; /* Add smooth hover transition */
 }
-#loginbtn svg{
-    width: 20px;
-    height: 20px;
-    color: white;
+
+#loginbtn:hover {
+  background-color: rgba(180, 0, 0, 0.943);
+}
+
+#loginbtn svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  #login form {
+    width: 85%; /* Expand form width for smaller screens */
+  }
+
+  #logintitle {
+    font-size: 36px; /* Slightly smaller title for tablets */
+  }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+  #login {
+    margin-top: 50px; /* Adjust spacing for mobile devices */
+    padding: 10px; /* Reduce padding for better fit */
+  }
+
+  #logintitle {
+    font-size: 28px; /* Smaller title for mobile screens */
+  }
+
+  #login form {
+    width: 100%; /* Full width for the form */
+  }
+
+  .list input {
+    width: 100%; /* Full width for inputs */
+  }
+
+  #loginbtn {
+    width: 100%; /* Full width for the submit button */
+  }
 }

@@ -1,6 +1,5 @@
 #contact {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,6 +7,8 @@
     flex-direction: column;
     margin-top: 180px;
     margin-bottom: 30px;
+    padding: 20px; /* Added padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
   
   #contact form {
@@ -17,6 +18,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    box-sizing: border-box;
   }
   
   #contacttitle {
@@ -24,6 +26,7 @@
     font-weight: 500;
     color: black;
     margin-bottom: 20px;
+    text-align: center; /* Center align title for better responsiveness */
   }
   
   .list {
@@ -53,6 +56,10 @@
     box-sizing: border-box;
   }
   
+  .list textarea {
+    resize: none; /* Prevent resizing for better design */
+  }
+  
   #loginbtn {
     padding: 8px 15px;
     background-color: rgba(214, 7, 7, 0.943);
@@ -64,6 +71,7 @@
     justify-content: center;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
   }
   
   #loginbtn:hover {
@@ -74,5 +82,44 @@
     width: 20px;
     height: 20px;
     color: white;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 1024px) {
+    #contact form {
+      width: 90%; /* Expand form width for smaller screens */
+    }
+  
+    #contacttitle {
+      font-size: 36px; /* Slightly smaller title */
+    }
+  }
+  
+  /* Small screens (mobile devices) */
+  @media (max-width: 768px) {
+    #contact {
+      margin-top: 100px; /* Adjust spacing for mobile */
+      margin-bottom: 20px;
+    }
+  
+    #contacttitle {
+      font-size: 28px; /* Smaller title for smaller screens */
+    }
+  
+    #contact form {
+      width: 100%; /* Full width for form */
+      padding: 10px; /* Add padding for better layout */
+    }
+  
+    .list input,
+    .list textarea {
+      width: 100%; /* Full width for inputs and textarea */
+    }
+  
+    #loginbtn {
+      width: 100%; /* Full width for button */
+    }
   }
   

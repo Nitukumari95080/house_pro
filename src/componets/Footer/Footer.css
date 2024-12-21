@@ -1,0 +1,100 @@
+.footer {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align columns at the top */
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 20px 40px; /* Space inside the footer */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+  .footer-column {
+    flex: 1 1 22%; /* Flexible width with a minimum of 22% */
+    margin: 10px; /* Add spacing between columns */
+    min-width: 200px; /* Prevent columns from getting too narrow */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f4a261; /* Accent color for headings */
+  }
+  
+  .footer-column p,
+  .footer-column ul {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd; /* Light gray for text */
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-column ul li:hover {
+    color: #f4a261; /* Highlight on hover */
+    cursor: pointer;
+  }
+  
+  .footer-column ul a {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color */
+  }
+  
+  .footer-column ul a:hover {
+    color: #f4a261; /* Highlight links on hover */
+  }
+  
+  .footer-column p:hover {
+    color: #f4a261; /* Highlight on hover */
+  }
+  
+  /* Center the terms section */
+  .terms {
+    text-align: center;
+    margin: 20px auto; /* Center-align for all screen sizes */
+    color: #ddd;
+    font-size: 14px;
+  }
+  
+  /* Responsive design for medium screens */
+  @media (max-width: 1024px) {
+    .footer {
+      padding: 20px 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .footer-column {
+      flex: 1 1 45%; /* Two columns in medium screens */
+    }
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: center;
+      text-align: center; /* Center-align text for mobile */
+    }
+  
+    .footer-column {
+      flex: 1 1 100%; /* Full width for each column */
+      margin: 10px 0; /* Add vertical spacing between columns */
+    }
+  
+    .footer-column ul {
+      display: block; /* Block layout for list items */
+    }
+  
+    .terms {
+      margin: 20px 0; /* Adjust margin for small screens */
+    }
+  }
+  

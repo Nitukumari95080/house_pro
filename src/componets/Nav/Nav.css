@@ -1,3 +1,4 @@
+/* Default Styling (Desktop) */
 #nav {
   width: 100%;
   height: 160px;
@@ -9,32 +10,31 @@
 .nav1 {
   width: 100%;
   height: 50%;
-  background-color:white;
-  border-bottom: 0.5px solid rgb(117, 111, 111,0.479);
+  background-color: white;
+  border-bottom: 0.5px solid rgba(117, 111, 111, 0.479);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   box-sizing: border-box;
 }
-
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.logo h1{
+.logo h1 {
   font-size: 18px;
   font-weight: 300;
   color: #81580b;
 }
-.search{
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.search input{
+.search input {
   width: 250px;
   padding: 10px;
   box-sizing: border-box;
@@ -45,9 +45,9 @@
   color: black;
   outline: none;
 }
-.search button{
+.search button {
   padding: 8px;
-  background-color: rgba(151, 76, 19, 0.943);
+  background-color: rgba(210, 17, 17, 0.943);
   color: white;
   font-size: 16px;
   border-radius: 30px;
@@ -59,26 +59,18 @@
   border: none;
   transition: all 0.2s;
 }
-.search button:hover{
+.search button:hover {
   border: 2px solid red;
   background: transparent;
   color: red;
 }
-.search svg{
- width: 20px;
- height: 20px; 
- color: white;
-}
-.search button:hover svg{
-  color: red;
-}
-.ham{
+.ham {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-#btnHome{
+#btnHome {
   border: none;
   outline: none;
   background-color: white;
@@ -86,21 +78,21 @@
   font-weight: 300;
   cursor: pointer;
   border-radius: 30px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   transition: all 0.1s;
 }
-#btnHome:hover{
-   background-color: rgba(232,230,230,0.844);
+#btnHome:hover {
+  background-color: rgba(232, 230, 230, 0.844);
 }
-#btnHome1{
-  background:1px solid rgba(225, 218, 218, 0.252);
+#btnHome1 {
+  background: 1px solid rgba(225, 218, 218, 0.252);
   outline: none;
   background-color: white;
   cursor: pointer;
   color: black;
   border-radius: 30px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -108,27 +100,17 @@
   gap: 10px;
   transition: all 0.1s;
 }
-#svg1{
-  width: 18px;
-  height: 18px;
-  fill: rgba(225, 218, 218, 0.252);
-}
-#svg2{
-  width: 25px;
-  height: 25px;
-  fill: rgba(225, 218, 218, 0.252);
-}
-#btnHome1:hover{
+#btnHome1:hover {
   box-shadow: 2px 2px 10px black;
 }
-.hamburger{
+.hamburger {
   position: absolute;
   width: 220px;
   height: 230px;
   background-color: white;
-  right:3%;
+  right: 3%;
   top: 45%;
-  box-shadow: 2px 2px 10px rgba(80,78,78);
+  box-shadow: 2px 2px 10px rgba(80, 78, 78);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -137,24 +119,20 @@
   padding: 10px;
   box-sizing: border-box;
 }
-.ham1{
- padding: 10px;
- box-sizing: border-box;
- font-size: 16px;
- font-weight: 300;
- color: black;
- cursor: pointer;
- width: 100%;
- border-radius: 30px;
+.ham1 {
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
 }
-.ham1:hover{
-  background-color: rgba(232,230,230,0.844);
+.ham1:hover {
+  background-color: rgba(232, 230, 230, 0.844);
 }
-a.active{
-  border-bottom: 2px solid rgb(81, 79, 79);
-  margin-bottom: 5px;
-}
-.nav2{
+.nav2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,25 +141,27 @@ a.active{
   height: 50%;
   background-color: #fff;
 }
-.svg11{
+.svg11 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 5px;
 }
-.svg11 svg{
+.svg11 svg {
   width: 25px;
   height: 25px;
   color: black;
 }
-.svg11 h3{
+.svg11 h3 {
   font-size: 12px;
-  color: rgba(56,56,56);
+  color: rgba(56, 56, 56);
   font-weight: 300;
 }
-/* responsive */
-/* Screen width up to 900px */
+
+/* Responsive Styling */
+
+/* Up to 900px */
 @media (max-width: 900px) {
   .search input {
     width: 200px;
@@ -190,18 +170,14 @@ a.active{
     padding: 8px;
     font-size: 14px;
   }
-  #btn1 {
-    display: none;
-  }
 }
 
-/* Screen width up to 800px */
+/* Up to 800px */
 @media (max-width: 800px) {
   .logo h1 {
     display: none;
   }
-  #nav1 {
-    overflow: hidden;
+  .nav1 {
     padding: 10px;
   }
   .nav2 {
@@ -212,47 +188,21 @@ a.active{
   }
   .svg11 {
     flex-shrink: 0;
-    scrollbar-width: none;
   }
-  .search input{
+  .search input {
     width: 180px;
-    font-size:15px ;
-  }
-  .search span{
-    display: none;
-  }
-  .search{
-    gap: 20px;
   }
 }
 
-/* Screen width up to 600px */
+/* Up to 600px */
 @media (max-width: 600px) {
-  #btnHome1{
-    border: none;
-    padding: 0;
-  }
-  #svg2{
-    display: none;
-  }
-  #svg1{
-    width: 25px;
-    height: 25px;
-    fill: black;
+  .search input {
+    width: 150px;
   }
   .search button {
-    width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
   .ham {
     display: none;
   }
-  .hamburger {
-    width: 100%;
-    height: auto;
-    position: static;
-    box-shadow: none;
-  }
 }
-
-
